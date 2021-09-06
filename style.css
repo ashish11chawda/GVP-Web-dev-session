@@ -26,24 +26,6 @@ strong {
   font-family: "Segoe UI", monospace, sans-serif;
   text-align: center;
 }
-h1 {
-  font-size: 56px;
-}
-h2 {
-  font-size: 40px;
-}
-h3 {
-  font-size: 28px;
-}
-h4 {
-  font-size: 24px;
-}
-h5 {
-  font-size: 20px;
-}
-h6 {
-  font-size: 16px;
-}
 p,
 li,
 span,
@@ -59,9 +41,6 @@ a {
 }
 section {
   padding-bottom: 2rem;
-}
-section:first-of-type {
-  padding: 0;
 }
 p {
   text-align: center;
@@ -88,11 +67,10 @@ p {
   margin: 0 auto;
   text-align: center;
 }
-/* .header-wrapper {
-  display: grid;
-  justify-content: center;
-  align-content: center;
-} */
+/* ------------------------------ HEADER -------------------------------- */
+.main-head{
+  color: var(--secondaryText);
+}
 .social-links {
   display: flex;
   justify-content: center;
@@ -102,11 +80,12 @@ p {
 }
 .social-links .link-icon {
   margin: 1rem;
-  color: var(--mainText);
+  color: var(--secondaryText);
 }
 .s2 h2 {
   color: var(--secondaryText);
 }
+/* ------------------------------ ABOUT SECTION -------------------------------- */
 .wrapper {
   display: flex;
   justify-content: center;
@@ -129,50 +108,12 @@ p {
 .wrapper .content .about-para {
   text-align: center;
   width: 40%;
-  color: var(--secondaryText);
-}
-.card {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  max-width: 15rem;
-  background-color: var(--secondaryColor);
   color: var(--mainText);
-  border-radius: 10px;
-  margin: 1rem;
 }
-.card .card-content {
-  margin: 0.5rem;
-}
-.card .card-img {
-  width: inherit;
-  height: 10rem;
-  object-fit: cover;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-.card .card-head {
-  padding: 0;
-  margin: 0;
-  font-size: 1.5rem;
-  color: var(--secondaryText);
-}
-.card .card-text {
-  font-size: 0.9rem;
-  width: 100%;
-  color: var(--secondaryText);
-}
-.card .card-link {
-  font-size: 0.9rem;
-  border: 2px solid #338eda;
-  padding: 0.2rem;
-  border-radius: 15px;
-  color: #338eda;
-}
+/* ------------------------------- EDUCATION SECTION ------------------------------------- */
 .edu-wrapper {
   flex-direction: column;
-  text-align: left;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: 1.5rem;
 }
 .edu-head,
@@ -180,20 +121,9 @@ p {
 .edu-domain,
 .edu-list li {
   color: var(--secondaryText);
-  margin: 0;
-  margin-left: 4rem;
+  margin: 0; 
 }
-.edu-head {
-  text-align: left;
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-.edu-batch {
-  font-size: 0.8rem;
-  background-color: #338eda44;
-  border-radius: 15px;
-  padding: 0 0.5rem;
-}
+/* --------------------------- CONTACT FORM ----------------------------- */
 .contact-form {
   width: 30%;
 }
@@ -212,21 +142,21 @@ p {
   font-weight: bold;
   font-size: 1rem;
 }
-textarea {
-  height: 5vw;
-}
 .copyright {
   margin-top: 5rem;
 }
 .dark {
+  cursor: pointer;
   outline: none;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   margin: 1rem;
   font-size: 1rem;
   color: var(--secondaryText);
   background-color: var(--secondaryColor);
 }
+
+/* ------------------------------- MEDIA QUERIES --------------------------------- */
 @media screen and (max-width: 768px) {
   section,
   header {
@@ -247,12 +177,6 @@ textarea {
   }
   .wrapper .content {
     flex-direction: column;
-  }
-  .edu-head,
-  .edu-batch,
-  .edu-domain,
-  .edu-list li {
-    margin-left: 0;
   }
   .form-wrapper,
   .contact-form {
